@@ -1,0 +1,5 @@
+engine_type,total_fatal_injuries,total_minor_injuries,total_serious_injuries,total_uninjured
+Reciprocating,8083.0,292.0,777.0,250.0
+Turbo Fan,1033.0,457.0,272.0,1700.0
+Turbo Jet,79.0,9.0,8.0,98.0
+Turbo Prop,622.0,28.0,60.0,219.0

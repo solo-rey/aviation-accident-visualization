@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Passenger Outcomes in Accidents Over Time</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script type="text/javascript" src="d3legend.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .top {
+            float: right;
+            margin-right: 50px;
+            width: 700px;
+        }
+
+        .top-left {
+            float: left;
+            margin-left: 50px;
+            width: 500px;
+            height: 400px;
+        }
+
+        .bottom-left {
+            margin: 0px;
+            border-radius: 10px;
+            float: left;
+        }
+
+        .bottom-right {
+            margin: 0px;
+            border-radius: 10px;
+            float: right;
+        }
+
+        .area {
+            clip-path: url(#clip);
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .browser text {
+            text-anchor: end;
+        }
+
+        .brush .extent {
+            stroke: #fff;
+            fill-opacity: .125;
+            shape-rendering: crispEdges;
+        }
+
+        .line {
+            fill: none;
+            stroke-width: 2px;
+            opacity: 0.5;
+            clip-path: url(#clip);
+        }
+
+        .line:hover {
+            stroke-width: 4px;
+            opacity: 1;
+        }
+
+        .legend rect {
+            fill: white;
+            stroke: black;
+            opacity: 0.8;
+        }
+
+        .stats {
+            float: right;
+        }
+        www
+        #options {
+            float: left;
+        }
+
+        img {
+            float: right;
+        }
+
+        .writeup {
+            position: absolute;
+            bottom: 0;
+            margin-top: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="legend"></div>
+        <div class="echart"></div>
+    </div>
+    <script type="text/javascript" src="ichart7.min.js"></script>
+</body>
+
+</html>
